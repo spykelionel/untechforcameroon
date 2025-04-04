@@ -1,0 +1,48 @@
+{% extends 'phish/base.html' %}
+{% block content %}
+<h3 class="mb-4 text-center">United Nations Tech Fellowship – Profile Completion</h3>
+<p class="text-muted text-center mb-4">
+    Please complete the form below to proceed with your registration. This information helps us align your profile with the right innovation program.
+</p>
+
+<form method="post">
+    {% csrf_token %}
+
+    <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="text" name="phone" class="form-control" placeholder="+237 6XX XXX XXX" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Residential Address</label>
+        <textarea name="address" class="form-control" rows="2" placeholder="Street, City, Region" required></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">National ID / Passport Number</label>
+        <input type="text" name="id_number" class="form-control" placeholder="e.g. 100200300X" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Age</label>
+        <input type="number" name="age" class="form-control" min="15" max="60" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Desired Role</label>
+        <input type="text" name="role" class="form-control" placeholder="e.g. Backend Developer, AI Researcher" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Skills (comma-separated)</label>
+        <textarea name="skills" class="form-control" rows="2" placeholder="Python, Networking, React, etc." required></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Motivational Letter</label>
+        <textarea name="motivational_letter" class="form-control" rows="4" placeholder="Why are you applying to this program?" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success w-100">Submit Profile</button>
+</form>
+{% endblock %}

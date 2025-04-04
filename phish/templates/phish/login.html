@@ -1,0 +1,59 @@
+{% extends 'phish/base.html' %}
+{% block content %}
+<style>
+    .un-primary {
+        background-color: #009EDB !important;
+        border-color: #009EDB !important;
+        color: white !important;
+    }
+
+    .un-primary:hover {
+        background-color: #007BB5 !important;
+        border-color: #007BB5 !important;
+    }
+
+    .un-accent {
+        background-color: #B3E5FC !important;
+        border-color: #B3E5FC !important;
+        color: #003E60 !important;
+    }
+
+    h3 {
+        color: #009EDB;
+    }
+
+    a {
+        color: #009EDB;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #007BB5;
+    }
+</style>
+
+<h3 class="mb-4">Participant Login</h3>
+
+<form method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" name="email" class="form-control" placeholder="you@example.com" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="********" required>
+    </div>
+
+    <button type="submit" class="btn un-primary w-100">Login to Continue</button>
+</form>
+
+<hr class="mt-4">
+
+<div class="text-center">
+    <small class="text-muted">
+        Don’t have an account? <a href="{% url 'register' %}">Register Here</a>
+    </small>
+</div>
+{% endblock %}

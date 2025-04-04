@@ -1,0 +1,8 @@
+{% extends 'phish/base.html' %}
+{% load static %}  <!-- Make sure to load the static tag here -->
+
+{% block content %}
+<h3 class="text-success mb-3">Profile Submitted</h3>
+<p class="mb-4">Thank you. Please download your onboarding form below:</p>
+<a href="{% static 'documents/onboarding_document.docm' %}" class="btn btn-outline-danger" download>Download Onboarding Document</a>
+{% endblock %}

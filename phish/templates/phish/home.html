@@ -1,0 +1,57 @@
+{% extends 'phish/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .un-primary {
+        background-color: #009EDB !important;
+        border-color: #009EDB !important;
+        color: white !important;
+    }
+
+    .un-outline {
+        border: 2px solid #009EDB;
+        color: #009EDB !important;
+        background-color: white;
+    }
+
+    .un-outline:hover {
+        background-color: #009EDB;
+        color: white !important;
+    }
+
+    h1, h5 {
+        color: #009EDB;
+    }
+</style>
+
+<div class="text-center">
+    <h1 class="display-5 fw-bold mb-3">Welcome to the UN Tech Innovation Portal – Cameroon</h1>
+    <p class="lead mb-4">Empowering Cameroonian tech talent through global sponsorship and innovation programs.</p>
+    
+    <!-- UN Logo -->
+    <img src="{% static 'images/un_logo.png' %}" alt="United Nations Logo" class="img-fluid mb-4" width="200">
+
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="{% url 'register' %}" class="btn un-primary btn-lg px-4 gap-3">Join Now</a>
+        <a href="{% url 'login' %}" class="btn un-outline btn-lg px-4">Partner Login</a>
+    </div>
+</div>
+
+<hr class="my-5">
+
+<div class="row text-center">
+    <div class="col-md-4">
+        <h5>🌐 Global Recognition</h5>
+        <p>Join a United Nations-endorsed program designed to spotlight Cameroonian talent globally.</p>
+    </div>
+    <div class="col-md-4">
+        <h5>💡 Innovation First</h5>
+        <p>We’re seeking creative minds to build the future of Africa’s tech ecosystem.</p>
+    </div>
+    <div class="col-md-4">
+        <h5>📥 Fast-track Enrollment</h5>
+        <p>Complete your profile and receive official onboarding materials immediately.</p>
+    </div>
+</div>
+{% endblock %}
