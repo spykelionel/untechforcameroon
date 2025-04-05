@@ -1,0 +1,8 @@
+new user | atest@g.com | +237680226898 | Bambili, bamenda | 183848382929 | 25 | Redteamer | Python,Networking,Pentesting, Active directory  | Am motivated
+new user | atest@g.com | 23456 | 24 | 232424 | 32 | 22323r | htr | 2r23r
+Major | youexample@gmail.com | +2376888999777 | New York  | 100200300Db | 40 | Hacker | Networking  | I'm jobless 
+Bih Deline | delineswift54@gmail.com | 676729756 | Bamenda  | Kit114 | 19 | AI researcher | Python, PHP, c++, flutter,  | Because I want to follow my dreams and passion 
+Bih Deline | delineswift54@gmail.com | 654349937 | Fonchas street, Bamenda, Northwest  | 12345 | 20 | Frontend developer  | Html,tailwindCss,react js | I am applying for this program so as to get resources which can enhance my skills in the front end development domain
+MUYAH GAIOUS  | muyahgaious97@gmail.com | 680684405 | airport rd, bamenda, northwest | 101246429 | 20 | machine learning | phython, php, react | I’m passionate about using technology to solve real problems in my community and beyond. As someone based in Cameroon, I’ve seen firsthand how access to resources and mentorship can transform ideas into impactful solutions. This opportunity represents a chance for me to grow not just technically, but also as a leader and changemaker.
+
+I’m applying because I believe in the power of innovation and collaboration. With international support, I can take my skills to the next level, contribute to meaningful projects, and help inspire others in my local tech community. Being part of a global network would also allow me to learn from diverse perspectives and share my own experiences.
